@@ -1,0 +1,12 @@
+node_modules
+/*-config.json
+/.config.json
+.sass-cache
+.agignore
+*.swp
+node_modules/
+/.tmp/
+/dist/
+/build/
+/lib/
+/test_out/

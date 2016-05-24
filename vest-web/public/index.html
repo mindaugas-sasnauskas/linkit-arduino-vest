@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+
+<head>
+  <title>vest stats</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--jq-->
+  <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+  <!--bs-->
+  <link href="lib/bs/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="bower_components/chartist/dist/chartist.min.css">
+  <script src="lib/bs/js/bootstrap.min.js" type="text/javascript"></script>
+  <script src="bower_components/chartist/dist/chartist.min.js"></script>
+<script type="text/javascript" src="https://www.google.com/jsapi"></script>
+  <!-- // <script type="text/javascript" src="data/data0.json"></script> -->
+  <link href="style.css" rel="stylesheet" type="text/css"/>
+</head>
+
+<body>
+<div class="gcharts">
+  <div id="chart_div"></div>
+</div>
+
+  <div class="chartist-charts">
+    <div class="ct-chart ct-perfect-fourth"></div>
+    <div class="post-test form-group col-xs-5 pull-left">
+      <input type="TEXT" id="postTest" size="10" placeholder="test post">
+      <input type="button" id="submit" value="Submit">
+    </div>
+    <div class=" form-group   pull-left">
+      <button type="button" class="deb" sname="button">deb</button>
+    </div>
+    <div class="pull-right ">
+      <div class=" form-group  ">
+        <span onclick="requestData()" class="glyphicon glyphicon-refresh btn btn-block btn-default btn-lg "></span>
+        <span onclick="location.reload()" class="glyphicon glyphicon-refresh btn btn-block btn-default btn-lg hidden"></span>
+
+      </div>
+      <div class="center-block form-group  ">
+        <span onclick="zoomChart('out')" class="glyphicon glyphicon-minus btn btn-default btn-lg"></span>
+        <span onclick="zoomChart('in')" class="glyphicon glyphicon-plus btn btn-default btn-lg"></span>
+      </div>
+      <div class="center-block">
+        <span onclick="zoomChart('left')" class="glyphicon glyphicon-arrow-left btn btn-default btn-lg"></span>
+        <span onclick="zoomChart('right')" class="glyphicon glyphicon-arrow-right btn btn-default btn-lg"></span>
+      </div>
+    </div>
+  </div>
+
+
+  <script>
+  </script>
+  <script src="client.js"></script>
+</body>
+
+</html>
